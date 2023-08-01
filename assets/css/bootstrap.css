@@ -11330,8 +11330,9 @@ a.text-dark:focus {
 
 .text-muted {
   color: #6c757d !important;
-  font-size: large;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 500;
 }
 
 .text-black-50 {
