@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Machine + Security = ? | Kunyang Li's Blog</title>
+
+    <!-- Keep the same stylesheets -->
+    <link rel="shortcut icon" href="./assets/ico.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./assets/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/virtual.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/topbar.virtual.css">
+
+    <!-- Blog post specific styles -->
+    <style>
+        .blog-post-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .blog-post {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .blog-content {
+            line-height: 1.8;
+            color: #495057;
+        }
+
+        .blog-meta {
+            color: #6c757d;
+            font-size: 0.9em;
+            margin: 15px 0 25px 0;
+        }
+
+        .back-to-blogs {
+            margin: 20px 0;
+            display: inline-block;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .back-to-blogs:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="theme-red">
+    <!-- Navbar -->
+    <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="200">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Kunyang Li</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
+                <span class="ti-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Post Content -->
+    <div class="container blog-post-container">
+        <a href="blog.html" class="back-to-blogs">← Back to All Posts</a>
+
+        <div class="blog-post">
+            <h1 class="fw-light">Machine + Security = ?</h1>
+            <div class="blog-meta">
+                Posted on November 9, 2024 | Machine Learning, Security
+            </div>
+            <div class="blog-content">
+                <p>The intersection of machine learning and security presents both exciting opportunities and unique
+                    challenges. As we continue to integrate AI systems into security-critical applications,
+                    understanding their vulnerabilities and developing robust defenses becomes increasingly important.
+                    In this post, we'll explore the key challenges and current research directions in this fascinating
+                    field.</p>
+
+                <h2>Key Challenges in ML Security</h2>
+
+                <h3>1. Adversarial Robustness</h3>
+                <p>Adversarial robustness addresses the vulnerability of ML models to carefully crafted perturbations in
+                    their inputs. These perturbations, often imperceptible to humans, can cause models to make incorrect
+                    predictions with high confidence. For example:</p>
+                <ul>
+                    <li>In computer vision, adding subtle noise to an image can
+                        cause a model to misclassify it entirely. In this case, the
+                        model will confidently predict the wrong class, even though
+                        the attacked image looks no different to the human eyes.
+                    </li>
+                    <li>In natural language processing, changing a few words can completely alter a model's sentiment
+                        analysis. More recently, we the prevalence of large language
+                        models (LLM), there are attack algorithms which can craft
+                        certain tokens appended to the original prompt in order to
+                        make LLMs output harmful content (e.g., how to make a bomb, etc.)</li>
+                    <li>In malware detection, slight modifications to malicious code can evade detection while
+                        maintaining functionality. The modified software could
+                        easily pass the traditional malware detection and cause
+                        harmful impact in real life. </li>
+                </ul>
+                <p>The challenge lies in developing models that maintain high accuracy on clean data while being
+                    resistant to these adversarial attacks.</p>
+
+                <h3>2. Model Explainability</h3>
+                <p>As ML models become more complex, understanding their decision-making process becomes crucial,
+                    especially in security-critical applications. Explainability encompasses:</p>
+                <ul>
+                    <li>Feature attribution: Understanding which inputs contributed most to a particular decision</li>
+                    <li>Decision paths: Tracing the logic path through deep neural networks</li>
+                    <li>Counterfactual explanations: Understanding what changes would alter the model's decision</li>
+                </ul>
+                <p>This transparency is essential for trust, debugging, and compliance with regulations.</p>
+
+                <h3>3. Fairness and Bias</h3>
+                <p>ML models can inadvertently learn and amplify societal biases present in training data. In security
+                    applications, this could lead to:</p>
+                <ul>
+                    <li>Discriminatory access control decisions</li>
+                    <li>Biased risk assessments</li>
+                    <li>Unfair resource allocation</li>
+                </ul>
+                <p>Addressing these issues requires both technical solutions (like debiasing algorithms) and careful
+                    consideration of social impact.</p>
+
+                <h3>4. Privacy Preservation</h3>
+                <p>As ML models learn from data, they might inadvertently memorize and expose sensitive information.
+                    Privacy concerns include:</p>
+                <ul>
+                    <li>Membership inference attacks: Determining if specific data was used in training</li>
+                    <li>Model inversion attacks: Reconstructing training data from model parameters</li>
+                    <li>Data extraction: Stealing private information through careful querying</li>
+                </ul>
+                <p>Techniques like differential privacy and federated learning aim to address these concerns.</p>
+
+                <h2>Current Research Directions</h2>
+                <p>My research focuses on several promising directions in trustworthy machine learning:</p>
+
+                <h3>1. Architectural Innovations</h3>
+                <ul>
+                    <li>Self-attention mechanisms for better feature understanding</li>
+                    <li>Architecture-level defenses against adversarial attacks</li>
+                    <li>Built-in interpretability through modular design</li>
+                </ul>
+
+                <h3>2. Training Strategies</h3>
+                <ul>
+                    <li>Adversarial training with dynamic attack generation</li>
+                    <li>Multi-task learning for improved robustness</li>
+                    <li>Contrastive learning for better representations</li>
+                </ul>
+
+                <h3>3. Verification and Testing</h3>
+                <ul>
+                    <li>Formal verification of neural network properties</li>
+                    <li>Systematic testing frameworks for ML models</li>
+                    <li>Certification of robustness guarantees</li>
+                </ul>
+
+                <h2>Looking Forward</h2>
+                <p>The field of ML security is rapidly evolving, with new challenges and solutions emerging regularly.
+                    Some exciting future directions include:</p>
+                <ul>
+                    <li>Scalable verification techniques for large language models</li>
+                    <li>Privacy-preserving federated learning systems</li>
+                    <li>Automated vulnerability detection in ML pipelines</li>
+                    <li>Integration of multiple robustness properties</li>
+                </ul>
+
+                <p>In future posts, we'll dive deeper into each of these areas, exploring specific techniques, recent
+                    papers, and practical implementations. We'll also discuss how these various aspects of trustworthy
+                    ML interact and complement each other.</p>
+
+                <h2>Get Involved</h2>
+                <p>I'm always excited to discuss these topics with fellow researchers and practitioners. If you're
+                    working on similar problems or have thoughts to share, feel free to reach out through any of my
+                    social media channels or email.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/wow/wow.min.js"></script>
+    <script src="./assets/js/topbar-virtual.js"></script>
+</body>
+
+</html>
