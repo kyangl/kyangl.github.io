@@ -74,91 +74,111 @@
       <div class="badge">Ph.D. Student @ Computer Science, University of Wisconsin-Madison</div>
     </div> <!-- End Caption header -->
   </div>
-
-  <div class="vg-page page-about" id="about" style="margin-left: 0px;">
+  <div class="vg-page page-about" id="about">
     <div class="container py-5">
-      <div class="row">
-        <img src="./assets/img/profile-pic3.jpg" width="350" height="500">
-        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="./assets/img/profile-pic3.jpg" class="img-fluid rounded" width="350" height="500">
+        </div>
+        <div class="col-md-8">
           <h1 class="fw-light">Kunyang Li</h1>
           <h5 class="fg-theme mb-3">Computer Science</h5>
-          <p class="text-muted">I am a Ph.D. student in the <a href="https://www.cs.wisc.edu/">Department of Computer
-              Sciences</a> at the <a href="https://www.wisc.edu/">University of
-              Wisconsin-Madison</a>. I am advised by
-            <a href="https://patrickmcdaniel.org/">Prof. Patrick McDaniel</a>
-            and am a member of <a href="https://madsp.cs.wisc.edu/">MadS&P research
-              group</a>. I have received my B.S. degree in Computer Science
-            (Honors, advised by <a href="https://www.adwaitnadkarni.com/">Adwait
-              Nadkarni</a>) and Mathematics from <a href="https://www.wm.edu/">William & Mary</a>.
+          <p class="text-muted">
+            I am a Ph.D. student in the <a href="https://www.cs.wisc.edu/">Department of Computer Sciences</a> at the 
+            <a href="https://www.wisc.edu/">University of Wisconsin-Madison</a>. I am advised by 
+            <a href="https://patrickmcdaniel.org/">Prof. Patrick McDaniel</a> and am a member of 
+            <a href="https://madsp.cs.wisc.edu/">MadS&P research group</a>. I have received my B.S. degree in Computer Science 
+            (Honors, advised by <a href="https://www.adwaitnadkarni.com/">Adwait Nadkarni</a>) and Mathematics from 
+            <a href="https://www.wm.edu/">William & Mary</a>.
           </p>
-          <p class="text-muted">My research mainly focuses on designing
-            <b>trustworthy Machine Learning</b> models -- evaluating and improving their
-            <b>robustness, explainability, and fairness</b>. I am interested in the
-            attack and defense mechanisms of adversarial machine learning from
-            both architectural and training perspectives. Overall, I want to
-            explore different angles of trustworthy AI and their broad
-            applications in <b>security and privacy</b>.
+          <p class="text-muted">
+            My research mainly focuses on designing <b>trustworthy Machine Learning</b> models—evaluating and improving their 
+            <b>robustness, explainability, and fairness</b>. I am interested in the attack and defense mechanisms of adversarial 
+            machine learning from both architectural and training perspectives. Overall, I want to explore different angles of 
+            trustworthy AI and their broad applications in <b>security and privacy</b>.
           </p>
-          <p class="text-muted">In my free times, I love playing table tennis, biking, hiking, and snowboarding.
-            Immersing
-            myself in nature makes me feel incredibly refreshed and empowered!
+          <p class="text-muted">
+            In my free time, I love playing table tennis, biking, hiking, and snowboarding. Immersing myself in nature makes me feel 
+            incredibly refreshed and empowered!
           </p>
         </div>
       </div>
-      <br>
-      <style>
-        .social-icon {
-          font-size: 50px;
-          margin: 0 0px;
-          color: lightskyblue
-        }
-
-        .social-icon:hover {
-          color: lightblue;
-        }
-      </style>
-      <div style="margin-top: -120px;">
-        <a style="text-decoration: none;" class="social-icon" href="https://github.com/Ellakyli">
+  
+      <!-- Social Icons -->
+      <div class="text-center mt-4">
+        <a class="social-icon" href="https://github.com/Ellakyli">
           <ion-icon name="logo-github"></ion-icon>
         </a>
-        <a style="text-decoration: none;" class="social-icon" href="https://twitter.com/KUNYANGLI_Ella">
+        <a class="social-icon" href="https://twitter.com/KUNYANGLI_Ella">
           <ion-icon name="logo-twitter"></ion-icon>
         </a>
-        <a style="text-decoration: none;" class="social-icon"
-          href="https://scholar.google.com/citations?user=ajrKIu0AAAAJ&hl=en">
+        <a class="social-icon" href="https://scholar.google.com/citations?user=ajrKIu0AAAAJ&hl=en">
           <ion-icon name="school"></ion-icon>
         </a>
-        <a style="text-decoration: none;" class="social-icon" href="https://www.linkedin.com/in/kunyang-li/">
+        <a class="social-icon" href="https://www.linkedin.com/in/kunyang-li/">
           <ion-icon name="logo-linkedin"></ion-icon>
         </a>
-        <a style="text-decoration: none;" class="social-icon" href="mailto: kli253@wisc.edu">
+        <a class="social-icon" href="mailto:kli253@wisc.edu">
           <ion-icon name="mail"></ion-icon>
         </a>
       </div>
     </div>
-
+  </div>
+  
+  <style>
+    .social-icon {
+      font-size: 40px;
+      margin: 0 10px;
+      color: #49d692;
+      text-decoration: none;
+    }
+  
+    .social-icon:hover {
+      color: #77d3a6;
+    }
+  
+    @media (max-width: 768px) {
+      .row {
+        text-align: center;
+      }
+  
+      .social-icon {
+        font-size: 35px;
+      }
+    }
+  </style>
+  
     <div class="vg-page page-about" id="pubs">
       <div class="container py-5" style="margin-top: -50px;">
         <h1 class="text-center fw-normal wow fadeIn" style="margin:
         25px;">Publications</h1>
+        <p class="text-muted" style="margin: 5px;"><a href="https://arxiv.org/abs/2503.14836">On the Robustness Tradeoff in Fine-Tuning</a></p>
+        <p style="margin: 5px;"><b>Kunyang Li</b>, Jean-Charles Noirot Ferrand, Ryan Sheatsley, Blaine Hoak, Yohan Beugin, Eric Pauley, Patrick McDaniel</p>
+        <p style="margin: 5px;"><i>Preprint</i></p>
+
+        <p class="text-muted" style="margin: 5px;"><a href="https://arxiv.org/abs/2502.12377">Alignment and Adversarial Robustness: Are More Human-Like Models More Secure?</a></p>
+        <p style="margin: 5px;">Blaine Hoak<span>&#42;</span>, <b>Kunyang Li<span>&#42;</span></b>, Patrick McDaniel</p>
+        <p style="margin: 5px;"><i>Preprint</i></p>
+
         <p class="text-muted" style="margin: 5px;"><a href="master_thesis.pdf" target="_blank">On Adversarial and Common
             Robustness of Parameter-Efficient Fine-Tuning Strategies</a></p>
         <p style="margin: 5px;"><b>Kunyang Li</b>, Patrick McDaniel</p>
-        <p style="margin: 5px;">Master Thesis, 2024</p>
+        <p style="margin: 5px;"><i>Master Thesis, 2024</i></p>
+
         <p class="text-muted" style="margin: 5px;"><a href="https://arxiv.org/abs/2408.14646">ParTEETor: A System for
             Partial
             Deployments of TEEs within Tor</a></p>
         <p style="margin: 5px;">Rachel King, Quinn Burke, Yohan Beugin, Blaine
           Hoak, <b>Kunyang Li</b>, Eric Pauley, Ryan Sheatsley, Patrick McDaniel</p>
-        <p style="margin: 5px;">Workshop on Privacy in the Electronic Society
-          (WPES), 2024</p>
+        <p style="margin: 5px;"><i>Workshop on Privacy in the Electronic Society
+          (WPES), 2024</i></p>
 
         <p class="text-muted" style="margin: 5px;"><a href="https://arxiv.org/abs/2310.11597">The Efficacy of
             Transformer-based Adversarial Attacks in Security Domains</a></p>
         <p style="margin: 5px;"><b>Kunyang Li</b>, Kyle Domico, Jean-Charles
           Noirot Ferrand, Patrick McDaniel</p>
-        <p style="margin: 5px;">Proceedings of the IEEE Conference on Military
-          Communications (MILCOM) - AI for Cyber Workshop, 2023</p>
+        <p style="margin: 5px;"><i>Proceedings of the IEEE Conference on Military
+          Communications (MILCOM) - AI for Cyber Workshop, 2023</i></p>
 
         <p class="text-muted" style="margin: 5px;"><a href="https://arxiv.org/abs/2303.00106">The Trade-off
             between Label
@@ -168,9 +188,9 @@
           Chen<span>&#42;</span>, <b>Kunyang Li</b>,
           Jayaram Raghuram, Xi Wu, Yingyu Liang,
           Somesh Jha</p>
-        <p style="margin: 5px;">International Conference on Learning
+        <p style="margin: 5px;"><i>International Conference on Learning
           Representations (ICLR), 2023 <FONT COLOR="#ff0000">
-            Spotlight (Acceptance Rate: 7.95%)</FONT>
+            Spotlight (Acceptance Rate: 7.95%)</FONT></i>
         </p>
 
         <p class="text-muted" style="margin: 5px;"><a href="https://scholarworks.wm.edu/honorstheses/1739">Static and
@@ -179,55 +199,52 @@
             Cryptographic-API
             Misuse Detection of Mobile Application</a></p>
         <p style="margin: 5px;"><b>Kunyang Li</b></p>
-        <p style="margin: 5px;">Undergraduate Honors Thesis, 2022</p>
+        <p style="margin: 5px;"><i>Undergraduate Honors Thesis, 2022</i></p>
 
 
       </div>
     </div>
 
     <div class="container py-5" id="news" style="margin-top: -50px;">
-      <h1 class="text-center fw-normal wow fadeIn" style="margin-top:
-      30px;">Professional Activities</h1>
+      <h1 class="text-center fw-normal" style="margin-top: 30px;">Professional Activities</h1>
       <div class="row py-3">
-        <div class="px-lg-3">
-          <h4 class="wow fadeInUp">Reviewer</h4>
-          <p class="text-muted" style="margin-top: -10px;">International
-            Conference on Learning Representations (ICLR) <a href="https://iclr.cc/Conferences/2024/CallForTinyPapers">
-              Tiny Paper
-              Track 2024</a>, <a href="https://iclr.cc/Conferences/2023/CallForTinyPapers"> Tiny Paper
-              Track 2023</a></p>
+      <div class="px-lg-3">
+        <h4>Reviewer</h4>
+        <p class="text-muted" style="margin-top: -10px;">International
+        Conference on Learning Representations (ICLR) <a href="https://iclr.cc/Conferences/2024/CallForTinyPapers">
+          Tiny Paper
+          Track 2024</a>, <a href="https://iclr.cc/Conferences/2023/CallForTinyPapers"> Tiny Paper
+          Track 2023</a></p>
 
-          <h4 class="wow fadeInUp">Artifact Reviewer</h4>
-          <div class="progress-wrapper wow fadeInUp">
-            <p class="text-muted" style="margin-top: -10px;">USENIX Security Symposium (USENIX Security) <a
-                href="https://www.usenix.org/conference/usenixsecurity25/">2025</a></p>
-          </div>
-          <!-- </div> -->
+        <h4>Artifact Reviewer</h4>
+        <div class="progress-wrapper">
+        <p class="text-muted" style="margin-top: -10px;">USENIX Security Symposium (USENIX Security) <a
+          href="https://www.usenix.org/conference/usenixsecurity25/">2025</a></p>
+        </div>
+        <!-- </div> -->
 
-          <h4 class="wow fadeInUp">External Reviewer</h4>
-          <div class="progress-wrapper wow fadeInUp">
-            <p class="text-muted" style="margin-top: -10px;">IEEE Symposium on
-              Security and Privacy (IEEE S&P) <a href="https://www.ieee-security.org/TC/SP2025/">2025</a></p>
-            <p class="text-muted" style="margin-top: -10px;">International
-              Conference on Learning Representations (ICLR) <a href="https://iclr.cc/Conferences/2025">2025</a></p>
-            <p class="text-muted" style="margin-top: -10px;">ACM Conference on
-              Computer and Communications Security (ACM CCS) <a href="https://sigsac.org/ccs/CCS2024/">2024</a></p>
-            <p class="text-muted" style="margin-top: 10px;">USENIX Security Symposium (USENIX Security) <a
-                href="https://www.usenix.org/conference/usenixsecurity23">2023</a></p>
+        <h4>External Reviewer</h4>
+        <div class="progress-wrapper">
+        <p class="text-muted" style="margin-top: -10px;">IEEE Symposium on
+          Security and Privacy (IEEE S&P) <a href="https://www.ieee-security.org/TC/SP2025/">2025</a></p>
+        <p class="text-muted" style="margin-top: -10px;">International
+          Conference on Learning Representations (ICLR) <a href="https://iclr.cc/Conferences/2025">2025</a></p>
+        <p class="text-muted" style="margin-top: -10px;">ACM Conference on
+          Computer and Communications Security (ACM CCS) <a href="https://sigsac.org/ccs/CCS2024/">2024</a></p>
+        <p class="text-muted" style="margin-top: 10px;">USENIX Security Symposium (USENIX Security) <a
+          href="https://www.usenix.org/conference/usenixsecurity23">2023</a></p>
 
-          </div>
         </div>
 
-        <div class="px-lg-3">
-          <h4 class="wow fadeInUp">Outreach & Volunteering</h4>
-          <div class="progress-wrapper wow fadeInUp">
-            <p class="text-muted" style="margin-top: 10px;"><a href="https://eyh.wisc.edu/">Expand Your
-                Horizons Madison</a> - 2023, Volunteer </p>
-            <li style="margin-top: -15px; margin-bottom: 10px; font-family: 'times';">Career
-              exploration activities in science, engineering, and mathematics for
-              girls, female-identifying or non-binary youth in middle school</li>
-          </div>
+        <h4>Outreach & Volunteering</h4>
+        <div class="progress-wrapper"></div>
+        <p class="text-muted" style="margin-top: 10px;"><a href="https://eyh.wisc.edu/">Expand Your
+          Horizons Madison</a> - 2023, Volunteer </p>
+        <li style="margin-top: -15px; margin-bottom: 10px; font-family: 'times';">Career
+          exploration activities in science, engineering, and mathematics for
+          girls, female-identifying or non-binary youth in middle school</li>
         </div>
+      </div>
       </div>
 
 
