@@ -168,87 +168,130 @@
   .btn-link:hover {
     background-color: #f1ecec;
   }
+
+  .btn-inline {
+    margin-left: 6px;
+    padding: 1px 6px;
+    font-size: 0.85em;
+    background-color: #9bf1bc;
+    color: #333;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn-inline:hover {
+    background-color: #dcdcdc;
+  }
+
+  .pub-tag-conference {
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #31ad65;
+    /* Gray by default */
+    padding: 2px 6px;
+  }
+
+  .venue-badge {
+    display: inline-block;
+    font-size: 0.75em;
+    padding: 2px 6px;
+    margin-left: 0px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  .conference {
+    background-color: #c46110;
+  }
+
+  .workshop {
+    background-color: #6f42c1;
+  }
+
+  .thesis {
+    background-color: #e36209;
+  }
+
+  .submission {
+    background-color: #999999;
+  }
 </style>
 
 <div class="vg-page page-about" id="pubs">
   <div class="container py-5" style="margin-top: -50px;">
     <h1 class="text-center fw-normal wow fadeIn" style="margin:
         25px;">Publications</h1>
+
     <p class="text-muted" style="margin: 5px;">
-      <a href="https://arxiv.org/abs/2503.14836" style="text-decoration: none; color: #159420;">
-        <strong>On the Robustness Tradeoff in Fine-Tuning</strong>
-      </a>
+      <span class="venue-badge conference">Conference</span>
+      <strong style="color:#000000">On the Robustness Tradeoff in Fine-Tuning</strong>
+      <a href="https://arxiv.org/abs/2503.14836" class="btn-inline">paper</a>
+      <a href="https://github.com/kyangl/robustness-finetuning" class="btn-inline">code</a>
+      <a href="FT-Robustness_poster" class="btn-inline">poster</a>
     </p>
     <p style="margin: 5px;">
-      <b>Kunyang Li</b>, Jean-Charles Noirot Ferrand, Ryan Sheatsley, Blaine Hoak, Yohan Beugin,
-      Eric Pauley, Patrick McDaniel
+      <b>Kunyang Li</b>, Jean-Charles Noirot Ferrand, Ryan Sheatsley, Blaine Hoak, Yohan Beugin, Eric Pauley, Patrick
+      McDaniel
     </p>
-    <p style="margin: 5px;">
-      <i>IEEE/CVF International Conference on Computer Vision (ICCV), 2025</i>
-    </p>
-    <p style="margin: 5px;">
-      <a href="https://arxiv.org/abs/2503.14836" class="btn-link">paper</a>
-      <a href="https://github.com/kyangl/robustness-finetuning" class="btn-link">code</a>
-      <a href="FT-Robustness_poster.pdf" class="btn-link">poster</a>
-    </p>
-    <p class="text-muted" style="margin: 5px;"><a href="https://arxiv.org/abs/2503.14836">On the Robustness Tradeoff in
-        Fine-Tuning</a></p>
-    <p style="margin: 5px;"><b>Kunyang Li</b>, Jean-Charles Noirot Ferrand, Ryan Sheatsley, Blaine Hoak, Yohan Beugin,
-      Eric Pauley, Patrick McDaniel</p>
-    <p style="margin: 5px;"><i>IEEE/CVF International Conference on Computer
-        Vision (ICCV), 2025</i></p>
+    <p style="margin: 5px;"><i>IEEE/CVF International Conference on Computer Vision (ICCV), 2025</i></p>
 
-    <p class="text-muted" style="margin: 5px;"><a href="https://arxiv.org/abs/2502.12377">Alignment and Adversarial
-        Robustness: Are More Human-Like Models More Secure?</a></p>
+    <p class="text-muted" style="margin: 5px;">
+      <span class="venue-badge workshop">Workshop</span>
+      <strong style="color:#000000">Alignment and Adversarial Robustness: Are More Human-Like Models More
+        Secure?</strong>
+      <a href="https://arxiv.org/abs/2502.12377" class="btn-inline">paper</a>
+      <a href="https://github.com/kyangl/alignment-security" class="btn-inline">code</a>
+    </p>
     <p style="margin: 5px;">Blaine Hoak<span>&#42;</span>, <b>Kunyang Li<span>&#42;</span></b>, Patrick McDaniel</p>
-    <p style="margin: 5px;"><i>The European Conference on Artificial
-        Intelligence (ECAI) - Workshop on Security and Privacy-Preserving AI/ML
-        (SPAIML), 2025</i></p>
+    <p style="margin: 5px;"><i>ECAI SPAIML Workshop, 2025</i></p>
 
-    <p class="text-muted" style="margin: 5px;"><a href="https://kunyangli.com/">Robustness Under Texture
-        Transformations: Exploiting Natural Texture Backdoors in Vision Models</a></p>
-    <p style="margin: 5px;">Blaine Hoak, <b>Kunyang
-        Li</b>, Kyle Domico, Patrick McDaniel</p>
+    <p class="text-muted" style="margin: 5px;">
+      <span class="venue-badge submission">In Submission</span>
+      <strong style="color:#000000">Robustness Under Texture Transformations: Exploiting Natural Texture Backdoors in
+        Vision Models</strong>
+      <a href="https://kunyangli.com/" class="btn-inline">paper</a>
+    </p>
+    <p style="margin: 5px;">Blaine Hoak, <b>Kunyang Li</b>, Kyle Domico, Patrick McDaniel</p>
     <p style="margin: 5px;"><i>In submission, 2025</i></p>
 
-    <p class="text-muted" style="margin: 5px;"><a href="master_thesis.pdf" target="_blank">On Adversarial and Common
-        Robustness of Parameter-Efficient Fine-Tuning Strategies</a></p>
-    <p style="margin: 5px;"><b>Kunyang Li</b>, Patrick McDaniel</p>
-    <p style="margin: 5px;"><i>Master Thesis, 2024</i></p>
-
-    <p class="text-muted" style="margin: 5px;"><a href="https://arxiv.org/abs/2408.14646">ParTEETor: A System for
-        Partial
-        Deployments of TEEs within Tor</a></p>
-    <p style="margin: 5px;">Rachel King, Quinn Burke, Yohan Beugin, Blaine
-      Hoak, <b>Kunyang Li</b>, Eric Pauley, Ryan Sheatsley, Patrick McDaniel</p>
-    <p style="margin: 5px;"><i>Workshop on Privacy in the Electronic Society
-        (WPES), 2024</i></p>
-
-    <p class="text-muted" style="margin: 5px;"><a href="https://arxiv.org/abs/2310.11597">The Efficacy of
-        Transformer-based Adversarial Attacks in Security Domains</a></p>
-    <p style="margin: 5px;"><b>Kunyang Li</b>, Kyle Domico, Jean-Charles
-      Noirot Ferrand, Patrick McDaniel</p>
-    <p style="margin: 5px;"><i>Proceedings of the IEEE Conference on Military
-        Communications (MILCOM) - AI for Cyber Workshop, 2023</i></p>
-
-    <p class="text-muted" style="margin: 5px;"><a href="https://arxiv.org/abs/2303.00106">The Trade-off
-        between Label
-        Efficiency and Universality
-        of Representations from Contrastive Learning</a></p>
-    <p style="margin: 5px;">Zhenmei Shi<span>&#42;</span>, Jiefeng
-      Chen<span>&#42;</span>, <b>Kunyang Li</b>,
-      Jayaram Raghuram, Xi Wu, Yingyu Liang,
-      Somesh Jha</p>
-    <p style="margin: 5px;"><i>International Conference on Learning
-        Representations (ICLR), 2023 <FONT COLOR="#ff0000">
-          Spotlight (Acceptance Rate: 7.95%)</FONT></i>
+    <p class="text-muted" style="margin: 5px;">
+      <span class="venue-badge workshop">Workshop</span>
+      <strong style="color:#000000">ParTEETor: A System for Partial Deployments of TEEs within Tor</strong>
+      <a href="https://arxiv.org/abs/2408.14646" class="btn-inline">paper</a>
     </p>
+    <p style="margin: 5px;">Rachel King, Quinn Burke, Yohan Beugin, Blaine Hoak, <b>Kunyang Li</b>, Eric Pauley, Ryan
+      Sheatsley, Patrick McDaniel</p>
+    <p style="margin: 5px;"><i>WPES, 2024</i></p>
 
-    <p class="text-muted" style="margin: 5px;"><a href="https://scholarworks.wm.edu/honorstheses/1739">Static and
-        Dynamic
-        Analysis in
-        Cryptographic-API
-        Misuse Detection of Mobile Application</a></p>
+    <p class="text-muted" style="margin: 5px;">
+      <span class="venue-badge workshop">Workshop</span>
+      <strong style="color:#000000">The Efficacy of Transformer-based Adversarial Attacks in Security Domains</strong>
+      <a href="https://arxiv.org/abs/2310.11597" class="btn-inline">paper</a>
+    </p>
+    <p style="margin: 5px;"><b>Kunyang Li</b>, Kyle Domico, Jean-Charles Noirot Ferrand, Patrick McDaniel</p>
+    <p style="margin: 5px;"><i>MILCOM AI for Cyber Workshop, 2023</i></p>
+
+    <p class="text-muted" style="margin: 5px;">
+      <span class="venue-badge conference">Conference</span>
+      <strong style="color:#000000">The Trade-off between Label Efficiency and Universality of Representations from
+        Contrastive Learning</strong>
+      <a href="https://arxiv.org/abs/2303.00106" class="btn-inline">paper</a>
+    </p>
+    <p style="margin: 5px;">Zhenmei Shi<span>&#42;</span>, Jiefeng Chen<span>&#42;</span>, <b>Kunyang Li</b>, Jayaram
+      Raghuram, Xi Wu, Yingyu Liang, Somesh Jha</p>
+    <p style="margin: 5px;"><i>ICLR, 2023 <font color="#ff0000">Spotlight (Acceptance Rate: 7.95%)</font></i></p>
+
+    <p class="text-muted" style="margin: 5px;">
+      <span class="venue-badge thesis">Thesis</span>
+      <strong style="color:#000000">Static and Dynamic Analysis in Cryptographic-API Misuse Detection of Mobile
+        Application</strong>
+      <a href="https://scholarworks.wm.edu/honorstheses/1739" class="btn-inline">paper</a>
+    </p>
     <p style="margin: 5px;"><b>Kunyang Li</b></p>
     <p style="margin: 5px;"><i>Undergraduate Honors Thesis, 2022</i></p>
 
